@@ -10,7 +10,7 @@ void paresImpares(const int v[], int n, bool &existe, int &p) {
 	// existe sii par(0,numelem) v (par (0,0) ^ impar(0,numelem)) v (par(0,p) ^ impar(p,numelem)
 	// p = #i ; 0<i<n ; v[i] % 2 = 0; 
 	int j = 0;
-	bool impar = false;
+	bool impar = false, par = false;
 	while (j < n && existe)
 	{
 		if (p > 0 && impar && v[j] % 2 == 0) {
@@ -20,16 +20,19 @@ void paresImpares(const int v[], int n, bool &existe, int &p) {
 			impar = true;
 			p = j;
 		}
+		else if (v[j] % 2 == 0 && !par) par = true;
 		j++;
 	}
-	if (p == 0 && impar) {
-		existe = true;
 
-	}
-	if (j == n && p == 0) {
+	if (j == n && !impar) {
 		existe = true;
-		if (impar) p = 0;
-		else p = n;
+		p = n;
+	}
+	if (impar && !par && j == n) {
+		existe = true;
+	}
+	if (impar && existe && par && p == 0) {
+		existe = false;
 	}
 }
 
