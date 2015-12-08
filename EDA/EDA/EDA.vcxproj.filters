@@ -15,10 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GISA2b.cpp">
+    <ClCompile Include="DG3B.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cima.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DG_GISA1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DG-GISA2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DG-GISA3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GISA2b.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sumabuen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

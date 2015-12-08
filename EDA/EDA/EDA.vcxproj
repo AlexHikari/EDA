@@ -18,6 +18,15 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Cima.cpp" />
+    <ClCompile Include="DG-GISA2.cpp" />
+    <ClCompile Include="DG-GISA3.cpp" />
+    <ClCompile Include="DG3B.cpp" />
+    <ClCompile Include="DG_GISA1.cpp" />
+    <ClCompile Include="GISA2b.cpp" />
+    <ClCompile Include="sumabuen.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6DE2F008-918C-40C8-9C08-23DD8245D2E7}</ProjectGuid>
     <RootNamespace>EDA</RootNamespace>
@@ -117,10 +126,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="DG_GISA1.cpp" />
-    <ClCompile Include="GISA2b.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
